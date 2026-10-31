@@ -1,13 +1,223 @@
+
 body {
-    background-color: lightblue;
-    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #0b0b12;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    height: 75px;
+    background-color: #171421;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.logo {
+    font-size: 28px;
+    color: white;
+}
+
+.logo span {
+    color: #a855f7;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 22px;
+}
+
+.links a:hover {
+    color: #a855f7;
+}
+
+.links .active {
+    color: #a855f7;
+    border-bottom: 2px solid #a855f7;
+    padding-bottom: 8px;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    height: 550px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+    url("https://preview.redd.it/the-full-gta-vi-reveal-artwork-directly-from-rockstars-v0-dkj530ewih4c1.png?auto=webp&s=8d1a0b9505400799b5783873a5b6eca56022d1d3");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    padding-top: 120px;
+    padding-left: 100px;
+}
+
+.welcome {
+    color: #c084fc;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 18px;
+    color: #dddddd;
+    line-height: 28px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #8b35d6;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #a855f7;
+}
+
+
+/* TRENDING GAMES */
+
+.games {
     text-align: center;
+    padding: 60px 30px;
+    background-color: #10101a;
 }
 
-h1 {
-    color: blue;
+.games h1 {
+    font-size: 35px;
 }
 
-p {
-    color: black;
+.heading-text {
+    color: #aaaaaa;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.game-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    width: 250px;
+    background-color: #1c1b29;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.game-card img {
+    width: 250px;
+    height: 300px;
+}
+
+.game-card h3 {
+    margin-left: 15px;
+}
+
+.game-card p {
+    margin-left: 15px;
+    color: #aaaaaa;
+}
+
+.game-card h4 {
+    margin-left: 15px;
+    color: #c084fc;
+    font-size: 18px;
+}
+
+
+/* GAMING ACCESSORIES */
+
+.accessories {
+    text-align: center;
+    padding: 60px 30px;
+    background-color: #171421;
+}
+
+.accessories h1 {
+    font-size: 35px;
+}
+
+.accessory-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.accessory-card {
+    width: 300px;
+    background-color: #242033;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.accessory-card img {
+    width: 300px;
+    height: 220px;
+}
+
+.accessory-card h3 {
+    margin-left: 15px;
+}
+
+.accessory-card p {
+    margin-left: 15px;
+    color: #aaaaaa;
+}
+
+.accessory-card h4 {
+    margin-left: 15px;
+    color: #c084fc;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #09090e;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer h2 {
+    font-size: 28px;
+}
+
+.footer span {
+    color: #a855f7;
+}
+
+.footer p {
+    color: #aaaaaa;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 25px;
 }
