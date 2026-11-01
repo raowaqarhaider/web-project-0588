@@ -1,0 +1,240 @@
+
+/* GENERAL CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #100820;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    height: 75px;
+    background-color: #171421;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.logo {
+    font-size: 28px;
+    color: white;
+}
+
+.logo span {
+    color: #a855f7;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 22px;
+}
+
+.links a:hover {
+    color: #a855f7;
+}
+
+.links .active {
+    color: #a855f7;
+    border-bottom: 2px solid #a855f7;
+    padding-bottom: 8px;
+}
+
+
+
+/* TRENDING GAMES */
+
+.games {
+    padding: 10px 5%;
+}
+
+.games h1 {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+}
+
+.game-card {
+    background-color: #2a1c3d;
+    border: 1px solid #704c91;
+    border-radius: 15px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.game-card img {
+    width: 100%;
+    height: 155px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.category {
+    background-color: #49305e;
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.game-card h3 {
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.stars {
+    color: #ffc928;
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.view {
+    display: block;
+    text-align: center;
+    background-color: #302044;
+    color: white;
+    border: 1px solid #a33be4;
+    border-radius: 9px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.view:hover {
+    background-color: #8b2bc9;
+}
+
+
+/* GAMING ACCESSORIES */
+
+.accessories {
+    padding: 20px 5%;
+}
+
+.accessories h1 {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.accessory-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.accessory-card {
+    background-color: #2a1c3d;
+    border: 1px solid #704c91;
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.accessory-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.price {
+    background-color: #49305e;
+    padding: 6px;
+    border-radius: 8px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.accessory-card h3 {
+    font-size: 15px;
+    height: 35px;
+}
+
+.cart {
+    display: block;
+    text-align: center;
+    background-color: #8525c8;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.cart:hover {
+    background-color: #aa42ed;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #090512;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.footer h2 {
+    color: #b64bfa;
+}
+
+.footer p {
+    color: #aaaaaa;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+
+    .game-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .accessory-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .links a {
+        font-size: 14px;
+        margin: 8px;
+    }
+
+    .game-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .accessory-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
