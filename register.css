@@ -1,0 +1,185 @@
+
+/* GENERAL CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b0b12;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    height: 75px;
+    background-color: #171421;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.logo {
+    font-size: 28px;
+    color: white;
+}
+
+.logo span {
+    color: #a855f7;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 22px;
+}
+
+.links a:hover {
+    color: #a855f7;
+}
+
+.links .active {
+    color: #a855f7;
+    border-bottom: 2px solid #a855f7;
+    padding-bottom: 8px;
+}
+
+
+/* REGISTER SECTION */
+
+.register-section {
+    background-color: #100820;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.register-section h1 {
+    font-size: 35px;
+}
+
+.subtitle {
+    color: #aaaaaa;
+    margin-bottom: 35px;
+}
+
+
+/* FORM BOX */
+
+.form-box {
+    width: 600px;
+    background-color: #1c142b;
+    border: 1px solid #704c91;
+    border-radius: 15px;
+    padding: 30px;
+    margin: auto;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.form-box h2 {
+    color: #c084fc;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+.form-box label {
+    display: block;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+
+/* FORM INPUTS */
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #292039;
+    border: 1px solid #49345e;
+    border-radius: 7px;
+    color: white;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-box textarea {
+    resize: vertical;
+}
+
+
+/* INPUT FOCUS */
+
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+    outline: none;
+    border: 1px solid #b64bfa;
+}
+
+
+/* REQUIRED INPUT */
+
+.form-box input:required {
+    border-left: 3px solid #a855f7;
+}
+
+
+/* TERMS AND CONDITIONS */
+
+.terms {
+    margin-top: 25px;
+}
+
+.terms input {
+    width: auto;
+}
+
+.terms span {
+    font-size: 14px;
+}
+
+
+/* BUTTONS */
+
+.submit-button {
+    background-color: #8b35d6 !important;
+    border: none !important;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.reset-button {
+    background-color: #302044 !important;
+    border: 1px solid #a855f7 !important;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.submit-button:hover,
+.reset-button:hover {
+    background-color: #a855f7 !important;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #09090e;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer h2 span {
+    color: #a855f7;
+}
+
+.footer p {
+    color: #aaaaaa;
+}
