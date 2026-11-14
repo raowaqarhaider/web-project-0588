@@ -1,0 +1,433 @@
+
+/* GENERAL CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b0b12;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    height: 75px;
+    background-color: #171421;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.logo {
+    font-size: 28px;
+    color: white;
+}
+
+.logo span {
+    color: #a855f7;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 22px;
+}
+
+.links a:hover {
+    color: #a855f7;
+}
+
+.links .active {
+    color: #a855f7;
+    border-bottom: 2px solid #a855f7;
+    padding-bottom: 8px;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    height: 600px;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkFgKBEjy-VcN_f0Yj_6VbNRV4jkTdI21klIiY9bVJqj9DNg-Utt8pbvs&s=10");
+
+    background-size: cover;
+    background-position: center 40%;
+    
+}
+
+.hero-text {
+    padding-top: 120px;
+    padding-left: 100px;
+}
+
+.welcome {
+    color: #171421;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 18px;
+    color: #dddddd;
+    line-height: 28px;
+    max-width: 600px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #171421;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #8b35d6;
+}
+
+
+/* INTRODUCTION SECTION */
+
+.intro {
+    text-align: center;
+    padding: 50px 15%;
+    background-color: #10101a;
+}
+
+.intro h1 {
+    font-size: 30px;
+    color: #c084fc;
+}
+
+.intro p {
+    color: #aaaaaa;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+
+/* SERVICES SECTION */
+
+.services {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 32px;
+}
+
+.heading-text {
+    color: #aaaaaa;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+
+/* SERVICE CARDS - FLEXBOX */
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+}
+
+.service-card {
+    width: 330px;
+    background-color: #2a1c3d;
+    border: 1px solid #704c91;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(168, 85, 247, 0.3);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 20px;
+}
+
+.service-content h2 {
+    color: #c084fc;
+    font-size: 21px;
+    min-height: 50px;
+}
+
+.service-content p {
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 23px;
+    min-height: 115px;
+}
+
+.service-content a {
+    display: inline-block;
+    background-color: #302044;
+    color: white;
+    border: 1px solid #a855f7;
+    border-radius: 9px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.service-content a:hover {
+    background-color: #8b35d6;
+}
+
+
+/* HOW IT WORKS SECTION */
+
+.how-it-works {
+    background-color: #171421;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.how-it-works h1 {
+    font-size: 32px;
+    color: #c084fc;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.step-box {
+    width: 260px;
+    background-color: #2a1c3d;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #704c91;
+}
+
+.step-box h2 {
+    color: #a855f7;
+    font-size: 35px;
+}
+
+.step-box h3 {
+    font-size: 20px;
+}
+
+.step-box p {
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+
+/* WHY CHOOSE US */
+
+.why-us {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.why-us h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.benefit {
+    width: 260px;
+    padding: 25px;
+    background-color: #1c1b29;
+    border-radius: 12px;
+    border: 1px solid #704c91;
+}
+
+.benefit h2 {
+    color: white;
+    font-size: 19px;
+}
+
+.benefit p {
+    color: #c084fc;
+    line-height: 23px;
+    font-size: 14px;
+}
+
+
+/* CONTACT SECTION */
+
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #171421;
+}
+
+.contact-section h1 {
+    font-size: 30px;
+}
+
+.contact-section p {
+    color: #aaaaaa;
+    line-height: 25px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #8b35d6;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #a855f7;
+    transform: scale(1.05);
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #09090e;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer h2 {
+    font-size: 28px;
+}
+
+.footer span {
+    color: #a855f7;
+}
+
+.footer p {
+    color: #aaaaaa;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1000px) {
+
+    .navbar {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .links a {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .service-card {
+        width: 280px;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .links {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .links a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .hero-text {
+        padding: 50px 25px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .intro {
+        padding: 40px 25px;
+    }
+
+    .services {
+        padding: 40px 20px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step-box {
+        width: 80%;
+    }
+
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefit {
+        width: 80%;
+    }
+
+}
